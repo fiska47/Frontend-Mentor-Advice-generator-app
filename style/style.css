@@ -1,0 +1,88 @@
+:root {
+  --accent-color: hsl(150, 100%, 66%);
+  --accemt-color-darker: hsl(150, 47%, 39%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+article {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 600px;
+  margin: auto;
+  padding: 1.5rem 1.5rem 3rem 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative;
+}
+
+@media only screen and (min-width: 550px) {
+  article {
+    padding: 2rem 3rem 3.5rem 3rem;
+  }
+}
+
+h4 {
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+blockquote {
+  margin: 2rem 0;
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+}
+
+button {
+  font-size: 0;
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+  transition: 0.3s background-color ease-in-out;
+}
+button:hover,
+button:focus {
+  background-color: var(--accemt-color-darker);
+}
+
+button:active {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+  color: hsl(193, 38%, 86%);
+}
+
+a {
+  color: var(--accent-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--accemt-color-darker);
+}
